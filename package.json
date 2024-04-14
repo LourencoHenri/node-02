@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js"
   },
@@ -13,9 +13,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.6",
+    "@types/supertest": "^6.0.2",
     "eslint": "^9.0.0",
+    "supertest": "^6.3.4",
     "tsx": "^4.7.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.4",
+    "vitest": "^1.5.0"
   },
   "dependencies": {
     "@fastify/cookie": "^9.3.1",
